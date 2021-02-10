@@ -1,3 +1,5 @@
+// Hacer un metodo para obtener la suma de ambos tickets e imprimir en consola la suma de los dos tickets
+
 package com.exercise;
 
 public class TicketDesk 
@@ -7,7 +9,7 @@ public class TicketDesk
 	{
 		double precioCoolPark=150;
 		double precioTestersPark=160;
-		int age=25;
+		int age=13;
 		boolean student=true;
 		
 //		CoolParkTicket coolPark = new CoolParkTicket(precioCoolPark,age,student);

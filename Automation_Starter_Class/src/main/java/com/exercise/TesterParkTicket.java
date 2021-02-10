@@ -1,11 +1,14 @@
+// Agregar constructor en la clase TestersParkTicket donde tenga un descuento especial y usarlo en nuestra clase Main
+
 package com.exercise;
 
 public class TesterParkTicket extends TicketParks
 {
 	
-	double adultTicket, childTicket, studentTicket;
+	double adultTicket, childTicket, studentTicket,SpecialOneTimeDiscount;
 	int age;
 	boolean student = false;
+	boolean canHave1TDiscount = false;
 	String priceDay, park;
 	
 	// Constructor
@@ -18,6 +21,7 @@ public class TesterParkTicket extends TicketParks
 		adultTicket = price;
 		childTicket = price * (.60);
 		studentTicket = price * (.30);
+		SpecialOneTimeDiscount = price * (.10);
 		priceDay = "Normal Day Price";
 		park = "Testers Park";
 	}
@@ -43,21 +47,28 @@ public class TesterParkTicket extends TicketParks
 	public double getTicketPrice()
 	{
 		double priceTicket;
-		if(student == true)
+		
+		
+		if(student == true && age>=18)
 		{
 			priceTicket = studentTicket;
-			System.out.println("Student Price (60% applied): $"+studentTicket);
+			System.out.println("Adult student Price (50% applied): $"+studentTicket);
 		} 	
-			else if(age>=18)
+			else if(student == true && age<18)
 			{
-				priceTicket = adultTicket;
-				System.out.println("Adult Price: $"+adultTicket);
-			} 
-				else
+				priceTicket = studentTicket;
+				System.out.println("Child student Price (70% applied): $"+(childTicket -= studentTicket));
+			}
+				else if(age>=18)
 				{
-					priceTicket = childTicket;
-					System.out.println("Child Price (30% applied): $"+childTicket);
-				}
+					priceTicket = adultTicket;
+					System.out.println("Adult Price: $"+adultTicket);
+				} 
+					else
+					{
+						priceTicket = childTicket;
+						System.out.println("Child Price (20% applied): $"+childTicket);
+					}		
 		
 		return priceTicket;
 	}

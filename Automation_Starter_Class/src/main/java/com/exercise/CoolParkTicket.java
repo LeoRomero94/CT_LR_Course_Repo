@@ -1,3 +1,5 @@
+// Agregar la condicion si es niño y es estudiante donde se sumen los porcentajes
+
 package com.exercise;
 
 public class CoolParkTicket extends TicketParks 
@@ -43,21 +45,26 @@ public class CoolParkTicket extends TicketParks
 	public double getTicketPrice()
 	{
 		double priceTicket;
-		if(student == true)
+		if(student == true && age>=18)
 		{
 			priceTicket = studentTicket;
-			System.out.println("Student Price (50% applied): $"+studentTicket);
+			System.out.println("Adult student Price (50% applied): $"+studentTicket);
 		} 	
-			else if(age>=18)
+			else if(student == true && age<18)
 			{
-				priceTicket = adultTicket;
-				System.out.println("Adult Price: $"+adultTicket);
-			} 
-				else
+				priceTicket = studentTicket;
+				System.out.println("Child student Price (70% applied): $"+(childTicket -= studentTicket));
+			}
+				else if(age>=18)
 				{
-					priceTicket = childTicket;
-					System.out.println("Child Price: $"+childTicket);
-				}
+					priceTicket = adultTicket;
+					System.out.println("Adult Price: $"+adultTicket);
+				} 
+					else
+					{
+						priceTicket = childTicket;
+						System.out.println("Child Price (20% applied): $"+childTicket);
+					}
 		
 		return priceTicket;
 	}
