@@ -2,108 +2,72 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[Open Browser "OrangeHRM" web page]]>
+      <![CDATA[Launching... https://opensource-demo.orangehrmlive.com/]]>
     </line>
     <line>
-      <![CDATA[Enter Username and Password]]>
+      <![CDATA[Login into Orange open source]]>
     </line>
     <line>
       <![CDATA[Validate that you have logged in successfully]]>
     </line>
     <line>
-      <![CDATA[Click Admin - Go to the admin page]]>
+      <![CDATA[Click Admin - Go to Admin page]]>
     </line>
     <line>
-      <![CDATA[Click the -Add- button]]>
+      <![CDATA[Search username in field]]>
     </line>
     <line>
-      <![CDATA[Enter a valid Employee name]]>
+      <![CDATA[Verify username exist in table]]>
     </line>
     <line>
-      <![CDATA[Enter a valid username]]>
+      <![CDATA[Logout of the Orange open source]]>
     </line>
     <line>
-      <![CDATA[Enter a new password and confirmation password]]>
-    </line>
-    <line>
-      <![CDATA[Click Save]]>
-    </line>
-    <line>
-      <![CDATA[Search in the field -Username-]]>
-    </line>
-    <line>
-      <![CDATA[Click search]]>
-    </line>
-    <line>
-      <![CDATA[Verify the username exists in the table]]>
-    </line>
-    <line>
-      <![CDATA[Log out]]>
-    </line>
-    <line>
-      <![CDATA[Close Browser]]>
+      <![CDATA[Close browser]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14137" started-at="2021-02-16T21:12:24 UYT" finished-at="2021-02-16T21:12:38 UYT">
+  <suite name="Default suite" duration-ms="12238" started-at="2021-02-20T15:14:11 UYT" finished-at="2021-02-20T15:14:23 UYT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14137" started-at="2021-02-16T21:12:24 UYT" finished-at="2021-02-16T21:12:38 UYT">
-      <class name="com.opensource.admin.qa.TC003_Admin_AddNewUser">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.opensource.admin.qa.TC003_Admin_AddNewUser@614ddd49]" name="beforeTest" is-config="true" duration-ms="6" started-at="2021-02-16T21:12:24 UYT" finished-at="2021-02-16T21:12:24 UYT">
+    <test name="Default test" duration-ms="12238" started-at="2021-02-20T15:14:11 UYT" finished-at="2021-02-20T15:14:23 UYT">
+      <class name="com.opensource.admin.qa.TC001_Admin_SearchEmployee_POM">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.opensource.admin.qa.TC001_Admin_SearchEmployee_POM@711f39f9]" name="beforeTest" is-config="true" duration-ms="1548" started-at="2021-02-20T15:14:11 UYT" finished-at="2021-02-20T15:14:13 UYT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TC003_Admin_AddNewUser_TC()[pri:0, instance:com.opensource.admin.qa.TC003_Admin_AddNewUser@614ddd49]" name="TC003_Admin_AddNewUser_TC" duration-ms="14108" started-at="2021-02-16T21:12:24 UYT" finished-at="2021-02-16T21:12:38 UYT">
+        <test-method status="PASS" signature="TC001_Admin_SearchEmployee_POM_TestScript()[pri:0, instance:com.opensource.admin.qa.TC001_Admin_SearchEmployee_POM@711f39f9]" name="TC001_Admin_SearchEmployee_POM_TestScript" duration-ms="10631" started-at="2021-02-20T15:14:13 UYT" finished-at="2021-02-20T15:14:23 UYT">
           <reporter-output>
             <line>
-              <![CDATA[Open Browser "OrangeHRM" web page]]>
+              <![CDATA[Launching... https://opensource-demo.orangehrmlive.com/]]>
             </line>
             <line>
-              <![CDATA[Enter Username and Password]]>
+              <![CDATA[Login into Orange open source]]>
             </line>
             <line>
               <![CDATA[Validate that you have logged in successfully]]>
             </line>
             <line>
-              <![CDATA[Click Admin - Go to the admin page]]>
+              <![CDATA[Click Admin - Go to Admin page]]>
             </line>
             <line>
-              <![CDATA[Click the -Add- button]]>
+              <![CDATA[Search username in field]]>
             </line>
             <line>
-              <![CDATA[Enter a valid Employee name]]>
+              <![CDATA[Verify username exist in table]]>
             </line>
             <line>
-              <![CDATA[Enter a valid username]]>
-            </line>
-            <line>
-              <![CDATA[Enter a new password and confirmation password]]>
-            </line>
-            <line>
-              <![CDATA[Click Save]]>
-            </line>
-            <line>
-              <![CDATA[Search in the field -Username-]]>
-            </line>
-            <line>
-              <![CDATA[Click search]]>
-            </line>
-            <line>
-              <![CDATA[Verify the username exists in the table]]>
-            </line>
-            <line>
-              <![CDATA[Log out]]>
-            </line>
-            <line>
-              <![CDATA[Close Browser]]>
+              <![CDATA[Logout of the Orange open source]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TC003_Admin_AddNewUser_TC -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.opensource.admin.qa.TC003_Admin_AddNewUser@614ddd49]" name="afterTest" is-config="true" duration-ms="0" started-at="2021-02-16T21:12:38 UYT" finished-at="2021-02-16T21:12:38 UYT">
+        </test-method> <!-- TC001_Admin_SearchEmployee_POM_TestScript -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.opensource.admin.qa.TC001_Admin_SearchEmployee_POM@711f39f9]" name="afterTest" is-config="true" duration-ms="37" started-at="2021-02-20T15:14:23 UYT" finished-at="2021-02-20T15:14:23 UYT">
           <reporter-output>
+            <line>
+              <![CDATA[Close browser]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.opensource.admin.qa.TC003_Admin_AddNewUser -->
+      </class> <!-- com.opensource.admin.qa.TC001_Admin_SearchEmployee_POM -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

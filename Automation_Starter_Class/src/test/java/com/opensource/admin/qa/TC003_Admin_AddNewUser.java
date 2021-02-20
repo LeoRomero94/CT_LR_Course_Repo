@@ -23,8 +23,12 @@ public class TC003_Admin_AddNewUser
 	  }
 	  
 	  @Test
-	  public void TC003_Admin_AddNewUser_TC() 
+	  public void TC003_Admin_AddNewUser_TC() throws InterruptedException 
 	  {
+		  //DATA GENERATION
+		  int random = (int)(Math.random()*1000);
+		  String userName = "Leo" + random; 
+		  
 		  // STEP 1
 		  Reporter.log("Open Browser \"OrangeHRM\" web page");
 		  System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chrome/chromedriver.exe");
@@ -63,7 +67,7 @@ public class TC003_Admin_AddNewUser
 		  		  
 		  // STEP 7
 		  Reporter.log("Enter a valid username");
-		  driver.findElement(By.xpath("//input[@id = 'systemUser_userName']")).sendKeys("MManning13");
+		  driver.findElement(By.xpath("//input[@id = 'systemUser_userName']")).sendKeys(userName);
 		  
 		  // STEP 8
 		  Reporter.log("Enter a new password and confirmation password");
@@ -81,7 +85,7 @@ public class TC003_Admin_AddNewUser
 		  Reporter.log("Search in the field -Username-");
 		  WebDriverWait waitAfterSave = new WebDriverWait(driver, 15);
 		  waitAfterSave.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='searchSystemUser_userName']")));
-		  driver.findElement(By.xpath("//input[@id='searchSystemUser_userName']")).sendKeys("MManning13");		  
+		  driver.findElement(By.xpath("//input[@id='searchSystemUser_userName']")).sendKeys(userName);		  
 		  
 		  // STEP 11
 		  Reporter.log("Click search");
@@ -91,13 +95,14 @@ public class TC003_Admin_AddNewUser
 		  // STEP 12
 		  Reporter.log("Verify the username exists in the table");
 		  String actualUsername = driver.findElement(By.xpath("//tbody/tr[1]/td[2]")).getText();
-		  Assert.assertEquals(actualUsername, "MManning13");
+		  Assert.assertEquals(actualUsername, userName);
 		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  
 		  // STEP 13
 		  Reporter.log("Log out");
 		  WebDriverWait waitUntilWelcomeAvl = new WebDriverWait(driver, 15);
-		  waitUntilWelcomeAvl.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@class='panelTrigger']")));
+		  waitUntilWelcomeAvl.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@class='panelTrigger']")));
+		  //Thread.sleep(3000);
 		  driver.findElement(By.xpath("//a[@class='panelTrigger']")).click();
 		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  WebDriverWait waitUntilClickWelcomeAvl = new WebDriverWait(driver, 15);
