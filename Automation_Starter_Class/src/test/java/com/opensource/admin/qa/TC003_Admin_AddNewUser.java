@@ -102,7 +102,7 @@ public class TC003_Admin_AddNewUser
 		  Reporter.log("Log out");
 		  WebDriverWait waitUntilWelcomeAvl = new WebDriverWait(driver, 15);
 		  waitUntilWelcomeAvl.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@class='panelTrigger']")));
-		  //Thread.sleep(3000);
+		  Thread.sleep(3000);
 		  driver.findElement(By.xpath("//a[@class='panelTrigger']")).click();
 		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  WebDriverWait waitUntilClickWelcomeAvl = new WebDriverWait(driver, 15);

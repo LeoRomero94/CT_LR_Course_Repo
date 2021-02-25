@@ -20,22 +20,37 @@
       <![CDATA[Verify username exist in table]]>
     </line>
     <line>
+      <![CDATA[Select the checkbox]]>
+    </line>
+    <line>
+      <![CDATA[Validate the modal to delete the record is available]]>
+    </line>
+    <line>
+      <![CDATA[Click the ok button]]>
+    </line>
+    <line>
+      <![CDATA[Search username in field]]>
+    </line>
+    <line>
+      <![CDATA[Verify username exist in table]]>
+    </line>
+    <line>
       <![CDATA[Logout of the Orange open source]]>
     </line>
     <line>
       <![CDATA[Close browser]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12238" started-at="2021-02-20T15:14:11 UYT" finished-at="2021-02-20T15:14:23 UYT">
+  <suite name="Default suite" duration-ms="11379" started-at="2021-02-24T23:56:34 UYT" finished-at="2021-02-24T23:56:45 UYT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12238" started-at="2021-02-20T15:14:11 UYT" finished-at="2021-02-20T15:14:23 UYT">
-      <class name="com.opensource.admin.qa.TC001_Admin_SearchEmployee_POM">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.opensource.admin.qa.TC001_Admin_SearchEmployee_POM@711f39f9]" name="beforeTest" is-config="true" duration-ms="1548" started-at="2021-02-20T15:14:11 UYT" finished-at="2021-02-20T15:14:13 UYT">
+    <test name="Default test" duration-ms="11379" started-at="2021-02-24T23:56:34 UYT" finished-at="2021-02-24T23:56:45 UYT">
+      <class name="com.opensource.admin.qa.TC004_Admin_DeleteUser_POM">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.opensource.admin.qa.TC004_Admin_DeleteUser_POM@711f39f9]" name="beforeTest" is-config="true" duration-ms="1558" started-at="2021-02-24T23:56:34 UYT" finished-at="2021-02-24T23:56:35 UYT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TC001_Admin_SearchEmployee_POM_TestScript()[pri:0, instance:com.opensource.admin.qa.TC001_Admin_SearchEmployee_POM@711f39f9]" name="TC001_Admin_SearchEmployee_POM_TestScript" duration-ms="10631" started-at="2021-02-20T15:14:13 UYT" finished-at="2021-02-20T15:14:23 UYT">
+        <test-method status="PASS" signature="TC004_Admin_DeleteUser_POM_TestScript()[pri:0, instance:com.opensource.admin.qa.TC004_Admin_DeleteUser_POM@711f39f9]" name="TC004_Admin_DeleteUser_POM_TestScript" duration-ms="9762" started-at="2021-02-24T23:56:35 UYT" finished-at="2021-02-24T23:56:45 UYT">
           <reporter-output>
             <line>
               <![CDATA[Launching... https://opensource-demo.orangehrmlive.com/]]>
@@ -56,18 +71,33 @@
               <![CDATA[Verify username exist in table]]>
             </line>
             <line>
+              <![CDATA[Select the checkbox]]>
+            </line>
+            <line>
+              <![CDATA[Validate the modal to delete the record is available]]>
+            </line>
+            <line>
+              <![CDATA[Click the ok button]]>
+            </line>
+            <line>
+              <![CDATA[Search username in field]]>
+            </line>
+            <line>
+              <![CDATA[Verify username exist in table]]>
+            </line>
+            <line>
               <![CDATA[Logout of the Orange open source]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TC001_Admin_SearchEmployee_POM_TestScript -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.opensource.admin.qa.TC001_Admin_SearchEmployee_POM@711f39f9]" name="afterTest" is-config="true" duration-ms="37" started-at="2021-02-20T15:14:23 UYT" finished-at="2021-02-20T15:14:23 UYT">
+        </test-method> <!-- TC004_Admin_DeleteUser_POM_TestScript -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.opensource.admin.qa.TC004_Admin_DeleteUser_POM@711f39f9]" name="afterTest" is-config="true" duration-ms="39" started-at="2021-02-24T23:56:45 UYT" finished-at="2021-02-24T23:56:45 UYT">
           <reporter-output>
             <line>
               <![CDATA[Close browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.opensource.admin.qa.TC001_Admin_SearchEmployee_POM -->
+      </class> <!-- com.opensource.admin.qa.TC004_Admin_DeleteUser_POM -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
